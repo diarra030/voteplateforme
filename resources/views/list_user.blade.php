@@ -89,14 +89,14 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class=" container">
         <div class="text-center text-5xl font-bold mt-5">
             Listes des Membres.
         </div>
 
     </div>
 
-    <div class="space-y-2 container mx-auto mt-8">
+    <div class=" overflow-x-auto space-y-2 container mx-auto mt-8">
 
         <div class="inline-flex space-x-10 items-center">
             <!-- Modal toggle s'enregistrer -->
