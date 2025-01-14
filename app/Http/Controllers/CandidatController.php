@@ -62,8 +62,11 @@ public function show($id)
         // Récupérer le candidat par son ID
         $candidat = Candidat::findOrFail($id);
 
+        // Récupérer les votants
+        $votants = $candidat->votes;
+
         // Retourner la vue avec les données du candidat
-        return view('show_candidat', compact('candidat'));
+        return view('show_candidat', compact('candidat', 'votants'));
     }
 
 

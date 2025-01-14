@@ -16,9 +16,9 @@
 
     <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-lg">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MU.RE.GA</span>
             </a>
             <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
@@ -206,6 +206,38 @@
     </div>
 </div>
     <!--Fin Modal Modifier Candidat -->
+
+    <!--Tableau pour afficher les votants pour du candidat -->
+    <div class="container mx-auto mt-8 mb-4">
+        <center>
+            <div class=" inline-flex p-3 space-x-10">
+                <span> Liste des votants pour le candidat : {{ $candidat->nom }} </span>
+                <span> Nombre de votants : {{ count($votants) }} </span>
+            </div>
+        </center>
+        <table id="myTable2" class="table-auto w-full border-collapse border border-gray-200 shadow-lg rounded-lg">
+            <thead class="bg-blue-500 text-white">
+                <tr>
+                    <th class="py-3 px-4 border border-gray-300">Nom et prenom</th>
+                    <th class="py-3 px-4 border border-gray-300">email</th>
+                </tr>
+            </thead>
+            <tbody>
+                @forelse ($votants as $votant)
+                    <tr class="hover:bg-gray-100">
+                        <td class="py-2 px-4 border border-gray-300">{{ $votant->user->nom }}</td>
+                        <td class="py-2 px-4 border border-gray-300">{{ $votant->user->email }}</td>
+                    </tr>
+                @empty
+                    <tr>
+                        <td colspan="5" class="py-2 px-4 text-center border border-gray-300">Pas de votant.
+                        </td>
+                    </tr>
+                @endforelse
+            </tbody>
+        </table>
+    </div>
+    <!-- Fin Tableau pour afficher les votants pour du candidat -->
 
 
 
