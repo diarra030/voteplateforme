@@ -40,7 +40,7 @@
                         </li>
 
                         <li>
-                            <form method="POST" action="">
+                            <form method="POST" action="{{route('logout')}}">
                                 @csrf
                                 <button type="submit"
                                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
@@ -163,7 +163,7 @@
                                         </button>
                                     </a>
                                     <a href="#" class="">
-                                        <form method="POST" action=""
+                                        <form method="POST" action="{{ route('utilisateur.destroy', $utilisateur->id) }}"
                                             onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?');">
                                             @csrf
                                             @method('DELETE')

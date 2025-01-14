@@ -95,4 +95,16 @@ class RegisteredUserController extends Controller
 
         return view('list_user')->with('utilisateurs', $utilisateurs);
     }
+
+    public function destroy($id)
+    {
+        // Rechercher le candidat à supprimer
+        $user = User::findOrFail($id);
+    
+        // Supprimer le candidat
+        $user->delete();
+    
+        // Rediriger avec un message de succès
+        return redirect()->back()->with('success', 'Utilisateur supprimé avec succès.');
+    }
 }

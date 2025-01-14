@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/membre', [RegisteredUserController::class, 'store_membre'])->name('new_membre');
     Route::get('/list_user', [RegisteredUserController::class, 'listeUser'])->name('list_user');
     Route::put('/utilisateur/{id}', [RegisteredUserController::class, 'update'])->name('utilisateur.update');
+    Route::delete('/utilisateur/{id}', [RegisteredUserController::class, 'destroy'])->name('utilisateur.destroy');
     Route::get('/listes-candidats', [CandidatController::class, 'liste_candidats'])->name('listes-candidats');
     Route::get('/candidats/{id}', [CandidatController::class, 'show'])->name('candidats.show');
     Route::put('/candidats/{id}', [CandidatController::class, 'update'])->name('candidats.update');
