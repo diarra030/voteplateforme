@@ -179,8 +179,8 @@
         <select id="type_candidat" name="type_candidat"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5">
             <option value="" disabled>-- Sélectionnez --</option>
-            <option value="president" {{ $candidat->type_candidat == 'PRESIDENT' ? 'selected' : '' }}>PRESIDENT</option>
-            <option value="commissaire aux comptes" {{ $candidat->type_candidat == 'COMMISSAIRE AUX COMPTES' ? 'selected' : '' }}>COMMISSAIRE AUX COMPTES</option>
+            <option value="PRESIDENT" {{ $candidat->type_candidat == 'PRESIDENT' ? 'selected' : '' }}>PRESIDENT</option>
+            <option value="COMMISSAIRE AUX COMPTES" {{ $candidat->type_candidat == 'COMMISSAIRE AUX COMPTES' ? 'selected' : '' }}>COMMISSAIRE AUX COMPTES</option>
         </select>
     </div>
 
