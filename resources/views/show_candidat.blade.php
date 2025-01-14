@@ -18,7 +18,7 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MU.RE.GA</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MUREGA</span>
             </a>
             <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
@@ -179,8 +179,8 @@
         <select id="type_candidat" name="type_candidat"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5">
             <option value="" disabled>-- Sélectionnez --</option>
-            <option value="president" {{ $candidat->type_candidat == 'president' ? 'selected' : '' }}>Président</option>
-            <option value="commissaire aux comptes" {{ $candidat->type_candidat == 'commissaire aux comptes' ? 'selected' : '' }}>Commissaire aux comptes</option>
+            <option value="president" {{ $candidat->type_candidat == 'PRESIDENT' ? 'selected' : '' }}>PRESIDENT</option>
+            <option value="commissaire aux comptes" {{ $candidat->type_candidat == 'COMMISSAIRE AUX COMPTES' ? 'selected' : '' }}>COMMISSAIRE AUX COMPTES</option>
         </select>
     </div>
 
