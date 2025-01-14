@@ -19,7 +19,7 @@
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MUREGA</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AGE MUREGA</span>
             </a>
         </div>
     </nav>
@@ -30,8 +30,7 @@
         class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"> Faites Briller Votre Voix : Votez pour un Impact !</h1>
-            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Chaque vote est une lumière guidant notre avenir commun. Prenez part à cette aventure où vos choix font la différence. 
-                C’est le moment d’agir et de marquer votre empreinte !
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Chaque vote est une lumière guidant notre avenir commun. Prenez part à cette aventure où vos choix font la différence. C’est le moment d’agir ensemble pour redynamiser notre mutuelle autour de ses fils et filles rassemblés !
             </p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                 <a href="{{ route('register') }}" data-modal-target="default-modal-inscription" data-modal-toggle="default-modal-inscription"
